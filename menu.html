@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Tru Sage</title>
+        <link rel="stylesheet" href="mystyle.css">
         <meta name="description" content="Discover the perfect blend of artisanal coffee and cozy ambiance at Tru Sage. Join us for a sip of tranquility and let the aroma of freshly roasted beans whisk you away.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Coffee Shop, Tru Sage, Coffee Lovers, Café">
+        <meta name="keywords" content="Coffee Shop, Tru Sage, Coffee Lovers, Cafe">
         <meta name="author" content="Hanwa Bakir">
          <!-- Google tag (gtag.js) -->
          <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V7VT6NLTL"></script>
@@ -16,64 +17,170 @@
  
          gtag('config', 'G-3V7VT6NLTL');
          </script>
+         <style>
+            *{
+            box-sizing: border-box;
+            }
+            /*
+        .beverages-tab{
+            display: flex;
+            
+            margin: 20px 500px; 
+            
+            padding: 10px 10px 10px;
+            background-color:#9AB288;
+            
+        }
+        .pasteries-tab{
+            
+            margin: 20px 400px; 
+            
+            padding: 10px 10px 10px;
+            background-color:#9AB288;
+            
+        }
+        */
+        main {
+             padding: 30px;
+            margin-left: 65px;
+            }
+        .parent {
+            margin: 100px 300px;
+            text-align: center;
+            display: grid;
+            grid-template-columns:auto auto;
+            width: 675px;
+
+          
+            
+        }
+        .tabs {
+            display: inline-block;
+            background-color:#9AB288;
+            border-radius: 15px;
+            padding: 20px;
+            width: 200px;
+            height: 80px;
+        }
+        .beverages-header {
+            text-align: center;
+        }
+        div h3 {
+            text-align: center;
+        }
+        #grid-container { 
+            display: grid;
+            grid-template-columns:auto auto;
+            margin-left: 100px;
+    
+        }
+
+        figure { 
+        text-align: center;  
+        display: flex;
+        flex-flow: column;
+        width: 180px;
+        gap: 5px 25px
+        }
+        #macchiato{
+            border-radius: 25px;
+        }
+        #americano{
+            border-radius: 25px;
+        }
+        #mocha{
+            border-radius: 25px;
+        }
+        #cappuccino{
+            border-radius: 25px;
+        }
+        #chai{
+            border-radius: 25px;
+        }
+        #chocolate{
+            border-radius: 25px;
+        }
+       
+
+/*
+div {   
+   
+   flex-flow: column;
+   width: 180px;
+   border: 1px solid lightgray;
+   padding: 5px;
+   margin: 10px;
+}
+*/
+
+
+         </style>
     </head>
     <body>
         <header>
-            <h2><img src="images/logo.png" alt="logo" width="100" height="100"></h2>
             <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="index.html">Home</a></li>
+                <h2 class="logo"><img src="images/logo.png" alt="logo" width="100" height="100"></h2>
+                <ul class="navi">
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li id="menu"><a href="menu.html">Menu</a></li>
+                    <li id="about"><a href="about.html">About</a></li>
+                    
                 </ul>
-                <img src="images/flogo.png" alt="logo" width="60" height="60"> 
-                <img src="images/instalogo.png" alt="logo" width="65" height="60">
-                <img src="images/birdlogo.png" alt="logo" width="60" height="60">
+            <div class="icons">
+                <img src="images/flogo.png" alt="logo" width="60" height="60" id="facebook"> 
+                <img src="images/instalogo.png" alt="logo" width="65" height="60" id="insta">
+                <img src="images/birdlogo.png" alt="logo" width="60" height="60" id="bird">
+            </div>
             </nav>
         </header>
         <main>
-            <div>
-                <div>
-                    <h1>Beverages</h1>
-                    <h1>Pasteries</h1>
+            <div class="parent">
+                <div> 
+                    <h1 class="tabs">Beverages</h1>
                 </div>
                 <div>
-                    <h2>Beverages</h2>
-                    <h3>Our coffee options can be served either hot or iced in 12/16 oz.</h3>
-                </div>
-                <div>
-                    <h2>Caramel Macchiato</h2>
-                    <h2>4.50/5.25</h2>
-                    <img src="images/picture4.jpg" alt="logo" width="350" height="300">
-                </div>
-                <div>
-                    <h2>Americano</h2>
-                    <h2>2.75/3.50</h2>
-                    <img src="images/picture6.jpeg" alt="logo" width="350" height="300">
-                </div>
-                <div>
-                    <h2>Mocha Latte</h2>
-                    <h2>4.24/5.00</h2>
-                    <img src="images/picture7.jpeg" alt="logo" width="350" height="300">
-                </div>
-                <div>
-                    <h2>Cappuccino</h2>
-                    <h2>3.50/4.50</h2>
-                    <img src="images/picture8.webp" alt="logo" width="350" height="300">
-                </div>
-                <div>
-                    <h2>Chai Tea Latte</h2>
-                    <h2>4.25/4.75</h2>
-                    <img src="images/picture9.jpg" alt="logo" width="350" height="300">
-                </div>
-                <div>
-                    <h2>Hot Chocolate </h2>
-                    <h2>3.25/3.75</h2>
-                    <img src="images/picture10.jpeg" alt="logo" width="350" height="300">
+                    <h1 class="tabs">Pasteries</h1>
                 </div>
             </div>
+                <div>
+                    <h2 class="beverages-header">Beverages</h2>
+                    <h3>Our coffee options can be served either hot or iced in 12/16 oz.</h3>
+                </div>
+            
+            <div id="grid-container">
+                <figure>
+                    <h2 class="macchiato"> Macchiato </h2>
+                    <h2 class="macchiato">4.50/5.25</h2>
+                    <img src="images/picture4.jpg" alt="logo" width="350" height="300" id="macchiato">
+                </figure>
+                <figure>
+                    <h2 class="americano">Americano</h2>
+                    <h2>2.75/3.50</h2>
+                    <img src="images/picture6.jpeg" alt="logo" width="350" height="300" id="americano">
+                </figure>
+                <figure>
+                    <h2 class="mocha">Mocha Latte</h2>
+                    <h2>4.24/5.00</h2>
+                    <img src="images/picture7.jpeg" alt="logo" width="350" height="300" id="mocha">
+                </figure>
+                <figure>
+                    <h2 class="cappuccino">Cappuccino</h2>
+                    <h2>3.50/4.50</h2>
+                    <img src="images/picture8.webp" alt="logo" width="350" height="300" id="cappuccino">
+                </figure>
+                <figure>
+                    <h2 class="chai">Chai Tea Latte</h2>
+                    <h2>4.25/4.75</h2>
+                    <img src="images/picture9.jpg" alt="logo" width="350" height="300" id="chai">
+                </figure>
+                <figure>
+                    <h2 class="chocolate">Hot Chocolate </h2>
+                    <h2>3.25/3.75</h2>
+                    <img src="images/picture10.jpeg" alt="logo" width="350" height="300" id="chocolate">
+                </figure>
+            </div>
             <footer>
-                <img src="images/logo.png" alt="logo" width="80" height="80">
+                <img src="images/logo.png" alt="logo" width="80" height="80" id="logo">
             <div>
                 <p>
                 Location:
@@ -116,6 +223,4 @@
     </body>
 
 </html>
-
-
 
