@@ -21,28 +21,9 @@
             *{
             box-sizing: border-box;
             }
-            /*
-        .beverages-tab{
-            display: flex;
-            
-            margin: 20px 500px; 
-            
-            padding: 10px 10px 10px;
-            background-color:#9AB288;
-            
-        }
-        .pasteries-tab{
-            
-            margin: 20px 400px; 
-            
-            padding: 10px 10px 10px;
-            background-color:#9AB288;
-            
-        }
-        */
         main {
-             padding: 30px;
-            margin-left: 65px;
+             padding: 0px;
+            margin-left: 0px;
             }
         .parent {
             margin: 100px 300px;
@@ -50,9 +31,7 @@
             display: grid;
             grid-template-columns:auto auto;
             width: 675px;
-
-          
-            
+            margin-left: 385px; 
         }
         .tabs {
             display: inline-block;
@@ -60,27 +39,27 @@
             border-radius: 15px;
             padding: 20px;
             width: 200px;
-            height: 80px;
+            height: 70px;
+            margin-left: 65px;
         }
         .beverages-header {
             text-align: center;
         }
-        div h3 {
+        #options {
             text-align: center;
+            margin-bottom: 100px;
         }
         #grid-container { 
             display: grid;
             grid-template-columns:auto auto;
-            margin-left: 100px;
-    
-        }
-
+            margin-left: 190px;
+        } 
         figure { 
         text-align: center;  
         display: flex;
         flex-flow: column;
         width: 180px;
-        gap: 5px 25px
+        gap: 5px 25px;
         }
         #macchiato{
             border-radius: 25px;
@@ -100,26 +79,19 @@
         #chocolate{
             border-radius: 25px;
         }
-       
+        #leaf{
+            display: flex;
+            margin-left:580px;
+            width: 30px;
+            margin-top: 40px ;
+        }
 
-/*
-div {   
-   
-   flex-flow: column;
-   width: 180px;
-   border: 1px solid lightgray;
-   padding: 5px;
-   margin: 10px;
-}
-*/
-
-
-         </style>
+        </style>
     </head>
     <body>
         <header>
             <nav>
-                <h2 class="logo"><img src="images/logo.png" alt="logo" width="100" height="100"></h2>
+                <a href="index.html"><h2 class="logo"><img src="images/logo.png" alt="logo" width="100" height="100"></h2></a>
                 <ul class="navi">
                     <li id="home"><a href="index.html">Home</a></li>
                     <li id="menu"><a href="menu.html">Menu</a></li>
@@ -131,26 +103,23 @@ div {
                 <img src="images/instalogo.png" alt="logo" width="65" height="60" id="insta">
                 <img src="images/birdlogo.png" alt="logo" width="60" height="60" id="bird">
             </div>
+            <script src="script.js"></script>
             </nav>
         </header>
         <main>
             <div class="parent">
-                <div> 
-                    <h1 class="tabs">Beverages</h1>
-                </div>
-                <div>
-                    <h1 class="tabs">Pasteries</h1>
-                </div>
+                    <h2 class="tabs">Beverages</h2>
+                    <h2 class="tabs">Pasteries</h2>
             </div>
                 <div>
-                    <h2 class="beverages-header">Beverages</h2>
-                    <h3>Our coffee options can be served either hot or iced in 12/16 oz.</h3>
+                    <h1 class="beverages-header">Beverages</h1>
+                    <h2 id="options">Our coffee options can be served either hot or iced in 12/16 oz.</h2>
                 </div>
             
             <div id="grid-container">
                 <figure>
                     <h2 class="macchiato"> Macchiato </h2>
-                    <h2 class="macchiato">4.50/5.25</h2>
+                    <h2 id="price">4.50/5.25</h2>
                     <img src="images/picture4.jpg" alt="logo" width="350" height="300" id="macchiato">
                 </figure>
                 <figure>
@@ -179,11 +148,21 @@ div {
                     <img src="images/picture10.jpeg" alt="logo" width="350" height="300" id="chocolate">
                 </figure>
             </div>
+            <div id="leaf">
+                <figure>
+                    <img src="images/leaf.png" alt="leaf" width="50" height="50"> 
+                </figure>
+                <figure>
+                    <img src="images/leaf.png" alt="leaf" width="50" height="50"> 
+                </figure>
+            </div>
             <footer>
-                <img src="images/logo.png" alt="logo" width="80" height="80" id="logo">
+                <div class="bottom-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80" id="logo"></a>
+                </div>
             <div>
                 <p>
-                Location:
+                <b>Location:</b>
 
                 429 Sagewood Street
                 Greensboro, NC
@@ -191,7 +170,7 @@ div {
             </div>
             <div>
                 <p>
-                Contact:
+                <b>Contact:</b>
 
                 trusage@gmail.com
                 (336) 697-3542
@@ -199,19 +178,19 @@ div {
             </div>
             <div>
                 <p>
-                Hours:
+                <b>Hours:</b>
 
                 Monday - Friday   7:00 AM - 8:00 PM
                     
                 Saturday - Sunday 10:00 AM - 3:00 PM 
                 </p>       
             </div>
-            <div>
+            <div id="icons">
                 <img src="images/flogo.png" alt="logo" width="50" height="50"> 
                 <img src="images/instalogo.png" alt="logo" width="50" height="50">
                 <img src="images/birdlogo.png" alt="logo" width="50" height="50">
             </div>
-            <div>
+            <div class="bottom">
                 <p>
                 © 2023 | tru sage
                 </p>
@@ -223,4 +202,3 @@ div {
     </body>
 
 </html>
-

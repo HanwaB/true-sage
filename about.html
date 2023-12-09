@@ -21,57 +21,107 @@
            
             #map {
                 margin:30px;
-            }
-            #location {
-                text-align:center;
+                border-radius: 35px;
             }
             #hours {
-                text-align: center;
+                margin-top: 100px; 
+            }
+            .maplocation {
+                display: flex; 
+                align-items: center;
+            }
+            .container {
+                display: flex;
+                align-items: flex-start; /* Align items to the top */
+                padding: 20px;
+            }
+            .text-container {
+                margin-left: 20px; /* Adjust the spacing between the image and paragraphs */
+                margin-top: 60px;
             }
             .mission {
-                text-align: center;
+                text-align: center; 
             }
             #statement {
                 margin: 50px;
-            
             }
             .missionstatement{
-            text-align: center;
-            margin: 40px 0px; 
-            padding: 30px 30px 30px;
-            background-color: #9AB288;
-            margin-bottom: 100px;
-        }
-        .touch {
-            text-align: center;
-        }
-        #form {
-            text-align: center;
-            margin-bottom: 100px;
+                text-align: center;
+                margin: 40px 0px; 
+                padding: 30px 30px 30px;
+                background-color: #9AB288;
+                margin-bottom: 100px;
+            }
+            #leaf{
+                display: flex;
+                margin-left:380px;
+            }
+            .touch {
+                text-align: center;
+            }
+            #form {
+                text-align: center;
+                margin-bottom: 100px;
+            }
+            input{
+                width:50%;
+                padding: 12px 20px;
+                margin: 20px 0;
+                box-sizing: border-box;
+                height: 80px;
+                background-color: #9AB288;
+                border-radius: 15px;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+                border: 1px solid black;
+            }
+            textarea {
+                width: 50%;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                background-color: #9AB288;
+                height: 180px;
+                border-radius: 15px;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+                border: 1px solid black;
+            }
+            #n{
+                margin-right: 640px;
             
-        }
-        input{
-            width: 300px;;
-            padding: 12px 20px;
-            margin: 20px 0;
-            box-sizing: border-box;
-        }
-        textarea {
-            width: 40%;
-            height: 150px;
-            padding: 12px 20px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            background-color: #f8f8f8;
-            resize: none;
-        }
+            }
+            #e{
+                margin-right: 640px;
+            }
+            #p{
+                margin-right: 550px;
+                margin-top: 10px;
+            }
+            #m{
+                margin-right: 610px;
+                margin-bottom: 20px;
+            }
+            #send{
+                margin-top: 30px;
+                width:500px;
+                margin-left: 700px;
+            }
+            label {
+                display: inline-block;
+                max-width: 100%;
+                margin-bottom: 5px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+            #send input[type="submit"] {
+                font-size: 20px; 
+                font-weight: bold;
+  
+            }
          </style>
     </head>
     <body>
         <header>
             <nav>
-                <h2 class="logo"><img src="images/logo.png" alt="logo" width="100" height="100"></h2>
+                <a href="index.html"><h2 class="logo"><img src="images/logo.png" alt="logo" width="100" height="100"></h2></a>
                 <ul class="navi">
                     <li id="home"><a href="index.html">Home</a></li>
                     <li id="menu"><a href="menu.html">Menu</a></li>
@@ -83,68 +133,94 @@
                 <img src="images/instalogo.png" alt="logo" width="65" height="60" id="insta">
                 <img src="images/birdlogo.png" alt="logo" width="60" height="60" id="bird">
             </div>
+            <script src="script.js"></script>
             </nav>
         </header>
         <main>
-            <section>
-                <section>
+                <div class="container">
                     <img src="images/maplocation.webp" alt="maplocation" id="map">
-                    <p id="location">
-                    Location:
-
-                    429 Sagewood Street
-                    Greensboro, NC
-                    </p>
-                </section>
-                <section id="hours">
-                        <p>
-                        Hours:
-        
-                        Monday - Friday   7:00 AM - 8:00 PM
-                            
-                        Saturday - Sunday 10:00 AM - 3:00 PM   
-                        </p>     
-                </section>
+                    <div class="text-container" >
+                        <p><b>Location:</b></p>
+                        <p>429 Sagewood Street</p>
+                        <p>Greensboro, NC</p>
+                        <p id="hours"><b> Hours:</b></p>
+                        <p>Monday - Friday:   7:00 AM - 8:00 PM </p>
+                        <p> Saturday - Sunday: 10:00 AM - 3:00 PM </p>
+                    </div>
+                </div>
+                
                 <div class="missionstatement">
                     <h1 class="mission">Our Mission</h1>
-                    <p id="statement">At tru sage, our mission is to blend the calming essence of nature with the art of coffee, we craft moments of tranquility and connection.
-
-                        We source our beans from the most remote and renowned coffee region, the lush coffee farms of Cuba, ensuring that each cup is a testament to the craftsmanship of the farmers who tend to the coffee trees. 
-                        
-                        Our mission is not just to serve coffee; it's to serve you, our community, and the world. With every cup, we invite you to slow down, to connect, and to find peace in the present moment.
-                        
+                    <p id="statement">
+                        At tru sage, our mission is to blend the calming essence of nature with the art of coffee, we craft moments of tranquility and connection.
+                     </p>
+                    <p>
+                        We source our beans from the most remote and renowned coffee region, the lush coffee farms of Cuba,
+                         ensuring that each cup is a testament to the craftsmanship of the farmers who tend to the coffee trees.
+                    </p> 
+                    <p>
+                        Our mission is not just to serve coffee; it's to serve you, our community, and the world.
+                         With every cup, we invite you to slow down, to connect, and to find peace in the present moment.
                     </p>
+        
+                    <div id="leaf">
+                        <figure>
+                            <img src="images/leaf.png" alt="leaf" width="50" height="50"> 
+                        </figure>
+                        <figure>
+                            <img src="images/leaf.png" alt="leaf" width="50" height="50"> 
+                        </figure>
+                        <figure>
+                            <img src="images/leaf.png" alt="leaf" width="50" height="50"> 
+                        </figure>
+                        <figure>
+                            <img src="images/leaf.png" alt="leaf" width="50" height="50"> 
+                        </figure>
+                        <figure>
+                            <img src="images/leaf.png" alt="leaf" width="50" height="50"> 
+                        </figure>
+                    </div>
                 </div>
             </section>
                 <div>
                     <h1 class="touch">Get In Touch!</h1>
                     <form action="file:///Users/hanwabakir/Desktop/ITEC%20362/Tru%20Sage%20Website/about.html" method="POST" enctype="multipart/form-data" id="form">
                         <div>
-                            <label for="name">Name:</label>
+                            <div id="n">
+                                <label for="name">Name:</label>
+                            </div>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div>
-                            <label for="email">Email:</label>
+                            <div id="e">
+                                <label for="email">Email:</label>
+                            </div>
                             <input type="text" id="email" name="email" required>
                         </div>
                         <div>
-                            <label for="phoneNumber">Phone Number:</label>
+                            <div id="p">
+                                <label for="phoneNumber">Phone Number:</label>
+                            </div>
                             <input type="tel" id="phoneNumber" name="phoneNumber">
                         </div>
                         <div>
-                            <label for="message">Message:</label>
+                            <div id="m">
+                                <label for="message">Message:</label>
+                            </div>
                             <textarea id="message" name="message" rows="3" cols="50"></textarea>
                         </div>
-                        <div>
+                        <div id="send">
                             <input type="submit" value="Send">
                         </div>
                     </form>
                 </div>
             <footer>
-                <img src="images/logo.png" alt="logo" width="80" height="80" id="logo">
+                <div class="bottom-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80" id="logo"></a>
+                </div>
             <div>
                 <p>
-                Location:
+                <b>Location:</b>
 
                 429 Sagewood Street
                 Greensboro, NC
@@ -152,7 +228,7 @@
             </div>
             <div>
                 <p>
-                Contact:
+                <b>Contact:</b>
 
                 trusage@gmail.com
                 (336) 697-3542
@@ -160,19 +236,19 @@
             </div>
             <div>
                 <p>
-                Hours:
+                <b>Hours:</b>
 
                 Monday - Friday   7:00 AM - 8:00 PM
                     
                 Saturday - Sunday 10:00 AM - 3:00 PM 
                 </p>       
             </div>
-            <div>
+            <div id="icons">
                 <img src="images/flogo.png" alt="logo" width="50" height="50"> 
                 <img src="images/instalogo.png" alt="logo" width="50" height="50">
                 <img src="images/birdlogo.png" alt="logo" width="50" height="50">
             </div>
-            <div>
+            <div class="bottom">
                 <p>
                 © 2023 | tru sage
                 </p>

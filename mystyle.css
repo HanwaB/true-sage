@@ -8,18 +8,15 @@ a {
   font-size:30px;
   margin-left: 80px;
 }
-
-
+/* mouse over link */
+a:hover {
+  color: white;
+}
 /* This sets the background color for the entire body */
 body {
     background-color:#D4DDCD;
-      font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
   }
-
-
-
-
-
 .navi {
   /* This changes the font style of the text */
   font-family: Arial, Helvetica, sans-serif;
@@ -30,7 +27,6 @@ body {
   list-style-type: none;
   display: flex;
 }
-
 /*Navbar*/
 nav { 
   /*
@@ -40,9 +36,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-   
 }
-
 .logo {
   width: 100px; /* Adjust the width and height as needed for your logo */
   height: 100px;
@@ -50,30 +44,35 @@ nav {
   border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
   margin:20px;
-  
-  
+  margin-left: -50px;
 }
-
 .icons {
   text-align: right;
   margin: 20px;
+  cursor: pointer;
 }
-
 .navi li {
   margin-right: 20px;
   width: 33.33%; 
 }
-
 footer {
-  background-color:#D4DDCD;
   color: black;
-  padding: 20px;
   text-align: center;
-  
+  margin-top: 150px;
 }
 #logo {
-    width: 80px; /* Adjust the width and height as needed for your logo */
-    height: 80px;
-    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  width: 80px; /* Adjust the width and height as needed for your logo */
+  height: 80px;
+  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+.bottom{
+  background-color: #9AB288;
+  padding: 1px;
+}
+#icons {
+  cursor: pointer;
+}
+.bottom-logo {
+  margin-right: 85px;
 }
